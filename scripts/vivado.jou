@@ -1,0 +1,116 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed May 10 20:11:04 2023
+# Process ID: 5392
+# Current directory: C:/Helios_scalable_QEC/scripts
+# Command line: vivado.exe -source total.tcl
+# Log file: C:/Helios_scalable_QEC/scripts/vivado.log
+# Journal file: C:/Helios_scalable_QEC/scripts\vivado.jou
+# Running On: LAPTOP-M73RD0KN, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16540 MB
+#-----------------------------------------------------------
+start_gui
+source total.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+add_files -norecurse C:/Helios_scalable_QEC/design/wrappers/standard_planar_code_2d_no_fast_channel.sv
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+add_files -norecurse {C:/Helios_scalable_QEC/design/generated/decoder_stage_controller_master_0.sv C:/Helios_scalable_QEC/design/generated/decoder_stage_controller_dummy_1.sv}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+export_ip_user_files -of_objects  [get_files C:/Helios_scalable_QEC/design/generated/decoder_stage_controller_master_0.sv] -no_script -reset -force -quiet
+remove_files  C:/Helios_scalable_QEC/design/generated/decoder_stage_controller_master_0.sv
+export_ip_user_files -of_objects  [get_files C:/Helios_scalable_QEC/design/generated/decoder_stage_controller_dummy_1.sv] -no_script -reset -force -quiet
+remove_files  C:/Helios_scalable_QEC/design/generated/decoder_stage_controller_dummy_1.sv
+add_files -norecurse C:/Helios_scalable_QEC/parameters/parameters.sv
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+set_property source_mgmt_mode DisplayOnly [current_project]
+reorder_files -before C:/Helios_scalable_QEC/design/generics/fifo_fwft.v C:/Helios_scalable_QEC/parameters/parameters.sv
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+set_property IS_GLOBAL_INCLUDE 1 [get_files -all C:/Helios_scalable_QEC/parameters/parameters.sv]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+set_property IS_GLOBAL_INCLUDE 1 [get_files -all C:/Helios_scalable_QEC/design/pe/processing_unit.sv]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+set_property IS_GLOBAL_INCLUDE 0 [get_files -all C:/Helios_scalable_QEC/design/pe/processing_unit.sv]
+set_property USED_IN {synthesis implementation simulation} [get_files -all C:/Helios_scalable_QEC/parameters/parameters.sv]
+set_property PATH_MODE RelativeOnly [get_files -all C:/Helios_scalable_QEC/parameters/parameters.sv]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+set_property PATH_MODE AbsoluteFirst [get_files -all C:/Helios_scalable_QEC/parameters/parameters.sv]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reorder_files -before C:/Helios_scalable_QEC/design/pe/processing_unit.sv C:/Helios_scalable_QEC/design/wrappers/standard_planar_code_2d_no_fast_channel_with_stage_controller.sv
+reorder_files -before C:/Helios_scalable_QEC/design/wrappers/standard_planar_code_2d_no_fast_channel_with_stage_controller.sv C:/Helios_scalable_QEC/design/wrappers/standard_planar_code_2d_no_fast_channel_synthesizable_top.sv
+reorder_files -before C:/Helios_scalable_QEC/design/pe/processing_unit.sv C:/Helios_scalable_QEC/design/wrappers/standard_planar_code_2d_no_fast_channel.sv
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+add_files -norecurse C:/Helios_scalable_QEC/design/stage_controller/decoder_stage_controller.sv
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_simulation
+launch_simulation
+launch_simulation
+source standard_planar_code_3d_no_fast_channel_left.tcl
+close_sim
+close_design

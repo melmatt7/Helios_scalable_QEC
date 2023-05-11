@@ -1,7 +1,5 @@
 `timescale 1ns / 1ps
 
-`include "parameters.sv"
-
 module decoder_stage_controller_left #(
     parameter CODE_DISTANCE_X = 4,
     parameter CODE_DISTANCE_Z = 12,
@@ -35,6 +33,7 @@ module decoder_stage_controller_left #(
     has_odd_clusters_otherside,
     net_roots_out
 );
+`include "../../parameters/parameters.sv"
 
 `define MAX(a, b) (((a) > (b)) ? (a) : (b))
 `define MAX3(a, b, c) (((a) > `MAX((b), (c))) ? (a) : `MAX((b), (c)))
@@ -491,6 +490,7 @@ module decoder_stage_controller_right #(
     has_message_flying_otherside,
     has_odd_clusters_otherside
 );
+`include "../../parameters/parameters.sv"
 
 `define MAX(a, b) (((a) > (b)) ? (a) : (b))
 `define MAX3(a, b, c) (((a) > `MAX((b), (c))) ? (a) : `MAX((b), (c)))

@@ -16,10 +16,10 @@ global_pointer_to_parent = None
 dealy_for_pe_busy = 3 #Critical parameter please choose wisely
 interconnect_physical_width = 0
 interconnection_latency = 0
-ll_connections = False
+ll_connections = True
 ll_connection_latency = 0
 num_leaf_fpgas = 0
-random_error_gen = False
+random_error_gen = True
 
 class hdlTemplate:
     out = ""

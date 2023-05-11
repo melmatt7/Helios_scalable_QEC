@@ -1,7 +1,5 @@
 `timescale 1ns / 1ps
 
-`include "../../parameters/parameters.sv"
-
 module decoder_stage_controller #(
     parameter CODE_DISTANCE_X = 3,
     parameter CODE_DISTANCE_Z = 2,
@@ -26,6 +24,7 @@ module decoder_stage_controller #(
     deadlock,
     final_cardinality
 );
+`include "../../parameters/parameters.sv"
 
 `define MAX(a, b) (((a) > (b)) ? (a) : (b))
 `define MAX3(a, b, c) (((a) > `MAX((b), (c))) ? (a) : `MAX((b), (c)))

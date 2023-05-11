@@ -1,0 +1,58 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Helios_scalable_QEC/parameters/parameters.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Helios_scalable_QEC/design/wrappers/standard_planar_code_2d_no_fast_channel_synthesizable_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module standard_planar_code_3d_no_fast_channel_synthesizable_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Helios_scalable_QEC/design/wrappers/standard_planar_code_2d_no_fast_channel_with_stage_controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module standard_planar_code_3d_no_fast_channel_with_stage_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Helios_scalable_QEC/design/wrappers/standard_planar_code_2d_no_fast_channel.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module standard_planar_code_3d_no_fast_channel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Helios_scalable_QEC/design/pe/processing_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processing_unit
+WARNING: [VRFC 10-3380] identifier 'updated_is_touching_boundary' is used before its declaration [C:/Helios_scalable_QEC/design/pe/processing_unit.sv:239]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Helios_scalable_QEC/design/generics/fifo_fwft.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_fwft
+INFO: [VRFC 10-311] analyzing module fifo_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Helios_scalable_QEC/design/channels/blocking_channel.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blocking_channel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Helios_scalable_QEC/design/channels/neighbor_link.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neighbor_link
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Helios_scalable_QEC/design/generics/tree_compare_solver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tree_compare_solver
+INFO: [VRFC 10-311] analyzing module min_val_with_index
+INFO: [VRFC 10-311] analyzing module min_val_4x_with_index
+INFO: [VRFC 10-311] analyzing module min_val_8x_with_index
+INFO: [VRFC 10-311] analyzing module min_val_less_8x_with_index
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Helios_scalable_QEC/design/generics/tree_distance_3d_solver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tree_distance_3d_solver
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Helios_scalable_QEC/design/stage_controller/decoder_stage_controller_partial.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_stage_controller_left
+INFO: [VRFC 10-311] analyzing module decoder_stage_controller_right
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Helios_scalable_QEC/design/wrappers/standard_planar_code_2d_right.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module standard_planar_code_3d_no_fast_channel_right
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Helios_scalable_QEC/design/stage_controller/get_boundry_cardinality_3d.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module get_boundry_cardinality
+WARNING: [VRFC 10-9157] macro 'INDEX' is redefined [C:/Helios_scalable_QEC/design/stage_controller/get_boundry_cardinality_3d.sv:29]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Helios_scalable_QEC/design/channels/pu_arbitration.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pu_arbitration_unit
+WARNING: [VRFC 10-2379] empty port in module declaration [C:/Helios_scalable_QEC/design/channels/pu_arbitration.sv:30]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Helios_scalable_QEC/design/channels/final_arbitration.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module final_arbitration_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Helios_scalable_QEC/design/channels/nonblocking_channel.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nonblocking_channel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Helios_scalable_QEC/design/wrappers/standard_planar_code_2d_left.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module standard_planar_code_3d_no_fast_channel_left
+WARNING: [VRFC 10-9157] macro 'INDEX' is redefined [C:/Helios_scalable_QEC/design/wrappers/standard_planar_code_2d_left.sv:109]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Helios_scalable_QEC/design/channels/neigbor_link_fifo.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neighbor_link_to_fifo
+WARNING: [VRFC 10-3380] identifier 'ADDRESS_WIDTH' is used before its declaration [C:/Helios_scalable_QEC/design/channels/neigbor_link_fifo.sv:16]
+WARNING: [VRFC 10-3380] identifier 'ADDRESS_WIDTH' is used before its declaration [C:/Helios_scalable_QEC/design/channels/neigbor_link_fifo.sv:17]
+WARNING: [VRFC 10-3380] identifier 'ADDRESS_WIDTH' is used before its declaration [C:/Helios_scalable_QEC/design/channels/neigbor_link_fifo.sv:21]
+WARNING: [VRFC 10-3380] identifier 'ADDRESS_WIDTH' is used before its declaration [C:/Helios_scalable_QEC/design/channels/neigbor_link_fifo.sv:24]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Helios_scalable_QEC/design/channels/nonoblockingchannel_fifo.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nonblocking_channel_to_fifo
+INFO: [VRFC 10-311] analyzing module nonblocking_channel_from_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Helios_scalable_QEC/design/stage_controller/decoder_stage_controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_stage_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Helios_scalable_QEC/test_benches/full_tests/bench_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bench_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Helios_scalable_QEC/qec_fpga/qec_fpga.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

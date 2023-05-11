@@ -1,8 +1,8 @@
 `timescale 1ns / 10ps
 
 module bench_decoder;
+`include "../../parameters/parameters.sv"
 
-`include "../sources_1/new/parameters.sv"
 `define assert(condition, reason) if(!(condition)) begin $display(reason); $finish(1); end
 
 localparam CODE_DISTANCE = 5;
@@ -125,6 +125,7 @@ integer i;
 always #5 clk = ~clk;
 
 initial begin
+
     clk = 1'b1;
     reset = 1'b1;
     new_round_start <= 0;

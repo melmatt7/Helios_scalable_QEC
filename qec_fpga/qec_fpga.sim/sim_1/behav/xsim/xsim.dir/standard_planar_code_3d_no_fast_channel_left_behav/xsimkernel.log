@@ -1,0 +1,7 @@
+Running: xsim.dir/standard_planar_code_3d_no_fast_channel_left_behav/xsimk.exe -simmode gui -wdb standard_planar_code_3d_no_fast_channel_left_behav.wdb -simrunnum 0 -socket 63287
+Design successfully loaded
+Design Loading Memory Usage: 14924 KB (Peak: 14924 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 20768 KB (Peak: 20768 KB)
+Simulation CPU Usage: 311 ms

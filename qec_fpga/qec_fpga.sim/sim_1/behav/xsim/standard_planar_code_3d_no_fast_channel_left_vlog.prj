@@ -1,0 +1,33 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../parameters/parameters.sv" \
+"../../../../../design/wrappers/standard_planar_code_2d_no_fast_channel_synthesizable_top.sv" \
+"../../../../../design/wrappers/standard_planar_code_2d_no_fast_channel_with_stage_controller.sv" \
+"../../../../../design/wrappers/standard_planar_code_2d_no_fast_channel.sv" \
+"../../../../../design/pe/processing_unit.sv" \
+
+verilog xil_defaultlib  \
+"../../../../../design/generics/fifo_fwft.v" \
+
+sv xil_defaultlib  \
+"../../../../../design/channels/blocking_channel.sv" \
+"../../../../../design/channels/neighbor_link.sv" \
+"../../../../../design/generics/tree_compare_solver.sv" \
+"../../../../../design/generics/tree_distance_3d_solver.sv" \
+"../../../../../design/stage_controller/decoder_stage_controller_partial.sv" \
+"../../../../../design/wrappers/standard_planar_code_2d_right.sv" \
+"../../../../../design/stage_controller/get_boundry_cardinality_3d.sv" \
+"../../../../../design/channels/pu_arbitration.sv" \
+"../../../../../design/channels/final_arbitration.sv" \
+"../../../../../design/channels/nonblocking_channel.sv" \
+"../../../../../design/wrappers/standard_planar_code_2d_left.sv" \
+"../../../../../design/channels/neigbor_link_fifo.sv" \
+"../../../../../design/channels/nonoblockingchannel_fifo.sv" \
+"../../../../../design/stage_controller/decoder_stage_controller.sv" \
+"../../../../../test_benches/full_tests/bench_decoder.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
